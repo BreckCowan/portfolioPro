@@ -1,0 +1,114 @@
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 0;
+  background: linear-gradient(var(--lt-slate-grey), var(--lt-light-grey));
+}
+
+.heading-container {
+  margin-top: 20px;
+  padding-top: 20px;
+  margin-bottom: 10px;
+
+}
+
+.about-me-parent {
+  max-width: 1200px;
+  width: 70%;
+}
+
+.about-me-card {
+  display: flex;
+  width: 100%;
+  box-shadow: 0 0px 20px -2px var(--dk-rich-black);
+  background-color: white;
+  margin-top: 20px;
+}
+
+.about-me-profile {
+  width: 50%;
+  background-image: url("../../assets/AboutMe/baconbreck.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-right: 1px solid black;
+  filter: saturate(70%);
+  filter: contrast(95%);
+  filter: brightness(125%);
+  filter:drop-shadow(50%);
+}
+
+.about-me-details {
+  width: 48%;
+  text-align: justify;
+  padding: 30px;
+  background-color: white;
+}
+
+.about-me-description {
+  font-size: 12px;
+}
+
+
+.about-me-highlights {
+  margin: 80px 0;
+}
+
+.highlght-heading {
+  font-family: "Poppins Bold";
+  font-size: 14px;
+  margin: 0 0 5px 0;
+}
+
+.highlight {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+.highlight-blob {
+  height: 8px;
+  width: 8px;
+  margin: 0 10px 0 0;
+  background-color: var(--zeno-7-black);
+  border-radius: 50%;
+}
+
+.about-me-options .highlighted-btn {
+  margin: 0 0 0 30px;
+}
+
+/*IPAD PRO RESPONSIVENESS*/
+@media only screen and (max-width: 1110px) {
+  .about-me-parent {
+    width: 88%;
+  }
+}
+
+@media only screen and (max-width: 898px) {
+  .about-me-profile {
+    display: none;
+  }
+
+  .about-me-details {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 466px) {
+  .about-me-options {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-me-options .highlighted-btn {
+    margin: 24px 0 0 0 !important;
+  }
+
+  .about-me-options button {
+    width: 100%;
+  }
+}
